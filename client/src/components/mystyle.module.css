@@ -1,0 +1,46 @@
+.body
+{
+    background-image: url(https://wallpapercave.com/wp/wp2337008.jpg);
+    background-size: contain;
+    
+}
+.butt
+{
+    margin: 5%;
+    margin-left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    transition: var(--speed-normal);
+    border: 1px solid var(--color-red);
+}
+&:hover {
+      border: 1px solid transparent;
+      background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png); 
+      transition-delay: 0.8s;
+      background-size: 180px;
+      animation: animate var(--speed-fast) steps(8) forwards;
+    }
+    &:last-of-type {
+      border: 1px solid var(--color-purple);
+      &:hover {
+        background: var(--color-purple) url(https://i.postimg.cc/FzBWFtKM/pixel2.png); 
+      }
+    }
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -480px;
+    }
+  }
